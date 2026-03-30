@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: padus-ingress
+  name: cacao-demo-ingress
   annotations:
     haproxy-ingress.github.io/cors-enable: "true"
     haproxy-ingress.github.io/cors-allow-origin: "*"
@@ -15,15 +15,15 @@ spec:
   ingressClassName: haproxy
   tls:
     - hosts:
-        - padus.nrp-nautilus.io
+        - cacao-demo.nrp-nautilus.io
   rules:
-    - host: padus.nrp-nautilus.io
+    - host: cacao-demo.nrp-nautilus.io
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: padus
+                name: cacao-demo
                 port:
                   number: 80

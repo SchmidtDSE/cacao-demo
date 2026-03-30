@@ -4,128 +4,88 @@
     "mcp_url": "https://duckdb-mcp.nrp-nautilus.io/mcp",
     "view": {
         "center": [
-            -98,
-            39
+            -75,
+            -9
         ],
-        "zoom": 4
-    },
-    "llm": {
-        "user_provided": true,
-        "default_endpoint": "https://openrouter.ai/api/v1",
-        "models": [
-            {
-                "value": "qwen/qwen3-235b-a22b",
-                "label": "Qwen3 235B"
-            },
-            {
-                "value": "moonshotai/kimi-k2",
-                "label": "Kimi K2"
-            },
-            {
-                "value": "minimax/minimax-m1",
-                "label": "MiniMax M1"
-            },
-            {
-                "value": "anthropic/claude-sonnet-4",
-                "label": "Claude Sonnet"
-            },
-            {
-                "value": "google/gemini-2.5-flash",
-                "label": "Gemini Flash"
-            }
-        ]
+        "zoom": 5
     },
     "welcome": {
-        "message": "Hi! I can help you explore protected areas and carbon data. Try asking:",
+        "message": "Hi! I can help you explore protected areas and biodiversity data. Try asking:",
         "examples": [
             "Tell me about the datasets you have access to.",
-            "Show only GAP Status 1 lands on the map.",
-            "Which states have the most PAD-US fee-protected land (in acres)?",
-            "Color the fee lands by management type."
+            "Show species richness for amphibians.",
+            "What are the protected areas in this region?",
+            "Which areas have the highest biodiversity?"
         ]
     },
     "collections": [
         {
-            "collection_id": "pad-us-4.1-fee",
-            "collection_url": "https://s3-west.nrp-nautilus.io/public-padus/padus-4-1/fee/stac-collection.json",
+            "collection_id": "iucn-richness-2025",
+            "collection_url": "https://s3-west.nrp-nautilus.io/public-iucn/stac-collection.json",
             "assets": [
                 {
-                    "id": "fee-pmtiles",
-                    "display_name": "Fee Lands",
-                    "group": "Protected Areas",
-                    "visible": true,
-                    "default_style": {
-                        "fill-color": [
-                            "match",
-                            [
-                                "get",
-                                "GAP_Sts"
-                            ],
-                            "1",
-                            "#26633A",
-                            "2",
-                            "#3E9C47",
-                            "3",
-                            "#7EB3D3",
-                            "4",
-                            "#BDBDBD",
-                            "#888888"
-                        ],
-                        "fill-opacity": 0.7
-                    },
-                    "default_filter": [
-                        "match",
-                        [
-                            "get",
-                            "GAP_Sts"
-                        ],
-                        [
-                            "1",
-                            "2"
-                        ],
-                        true,
-                        false
-                    ],
-                    "tooltip_fields": [
-                        "Unit_Nm",
-                        "GAP_Sts",
-                        "Mang_Type"
-                    ]
+                    "id": "combined-sr-cog",
+                    "display_name": "Combined Species Richness",
+                    "group": "Biodiversity",
+                    "colormap": "viridis",
+                    "rescale": "0,1000",
+                    "legend_label": "Species Count"
+                },
+                {
+                    "id": "amphibians-sr-cog",
+                    "display_name": "Amphibian Richness",
+                    "group": "Biodiversity",
+                    "colormap": "greens",
+                    "rescale": "0,200",
+                    "legend_label": "Species Count"
+                },
+                {
+                    "id": "birds-sr-cog",
+                    "display_name": "Bird Richness",
+                    "group": "Biodiversity",
+                    "colormap": "blues",
+                    "rescale": "0,400",
+                    "legend_label": "Species Count"
+                },
+                {
+                    "id": "mammals-sr-cog",
+                    "display_name": "Mammal Richness",
+                    "group": "Biodiversity",
+                    "colormap": "oranges",
+                    "rescale": "0,200",
+                    "legend_label": "Species Count"
+                },
+                {
+                    "id": "reptiles-sr-cog",
+                    "display_name": "Reptile Richness",
+                    "group": "Biodiversity",
+                    "colormap": "reds",
+                    "rescale": "0,200",
+                    "legend_label": "Species Count"
                 }
             ]
         },
         {
-            "collection_id": "pad-us-4.1-easement",
-            "collection_url": "https://s3-west.nrp-nautilus.io/public-padus/padus-4-1/easement/stac-collection.json",
+            "collection_id": "wdpa-december-2025",
+            "collection_url": "https://s3-west.nrp-nautilus.io/public-wdpa/stac-collection.json",
             "assets": [
                 {
-                    "id": "easement-pmtiles",
-                    "display_name": "Easements",
+                    "id": "wdpa-pmtiles",
+                    "display_name": "Protected Areas (WDPA)",
                     "group": "Protected Areas",
-                    "visible": false,
+                    "visible": true,
                     "default_style": {
-                        "fill-color": [
-                            "match",
-                            [
-                                "get",
-                                "GAP_Sts"
-                            ],
-                            "1",
-                            "#26633A",
-                            "2",
-                            "#3E9C47",
-                            "3",
-                            "#7EB3D3",
-                            "4",
-                            "#BDBDBD",
-                            "#888888"
-                        ],
-                        "fill-opacity": 0.7
+                        "fill-color": "#26633A",
+                        "fill-opacity": 0.6
+                    },
+                    "outline_style": {
+                        "line-color": "#1565C0",
+                        "line-width": 1
                     },
                     "tooltip_fields": [
-                        "Unit_Nm",
-                        "GAP_Sts",
-                        "Mang_Type"
+                        "NAME",
+                        "DESIG",
+                        "IUCN_CAT"
                     ]
                 }
             ]

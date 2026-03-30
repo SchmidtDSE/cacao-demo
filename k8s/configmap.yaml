@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: padus-config
+  name: cacao-demo-config
 data:
   config.template.json: |
     {
@@ -54,7 +54,7 @@ data:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: padus-nginx
+  name: cacao-demo-nginx
 data:
   nginx.conf: |
     server {

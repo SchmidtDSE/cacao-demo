@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: padus
+  name: cacao-demo
   labels:
-    app: padus
+    app: cacao-demo
 spec:
   type: ClusterIP
   selector:
-    app: padus
+    app: cacao-demo
   ports:
     - protocol: TCP
       port: 80
