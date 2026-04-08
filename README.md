@@ -4,6 +4,10 @@ A demo for deploying an AI-powered interactive map app with a focus on biodivers
 
 Users describe in plain language what datasets to show; the app uses an LLM agent with map tools and SQL access to visualize and analyze cloud-native geospatial data.
 
+**App demo:** [https://cacao-demo.nrp-nautilus.io/](https://cacao-demo.nrp-nautilus.io/)
+
+**Feedback form:** [https://data-requests.nrp-nautilus.io/cacao](https://data-requests.nrp-nautilus.io/cacao)
+
 **Full documentation:** [boettiger-lab.github.io/geo-agent/docs](https://boettiger-lab.github.io/geo-agent/docs/)
 
 ## Repository structure
