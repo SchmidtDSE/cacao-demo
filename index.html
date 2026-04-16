@@ -39,46 +39,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js"></script>
 
     <!-- Core styles from CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/boettiger-lab/geo-agent@6656298f5cfdd24ab9ec6b748067020dcde761cd/app/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/boettiger-lab/geo-agent@6656298f5cfdd24ab9ec6b748067020dcde761cd/app/chat.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/boettiger-lab/geo-agent@6656298f5cfdd24ab9ec6b748067020dcde761cd/app/sidebar.css">
-
-    <style>
-        /* Fix: sidebar.css sets width:auto + right but omits left:0,
-           causing MapLibre container to collapse. */
-        body.sidebar-mode #map {
-            left: 0;
-        }
-
-        /* Light sidebar theme */
-        body.sidebar-mode #sidebar {
-            background: #f8f9fa;
-            color: #1a1a2e;
-            box-shadow: -2px 0 6px rgba(0, 0, 0, 0.12);
-        }
-        body.sidebar-mode #sidebar-header,
-        body.sidebar-mode #sidebar-layers-pane,
-        body.sidebar-mode #chat-input-container,
-        body.sidebar-mode #sidebar-footer {
-            border-color: rgba(0, 0, 0, 0.1);
-        }
-        body.sidebar-mode #sidebar-hide {
-            color: #444;
-        }
-        body.sidebar-mode #sidebar-hide:hover {
-            background: rgba(0, 0, 0, 0.06);
-        }
-        body.sidebar-mode .sidebar-resize-handle {
-            border-left-color: rgba(0, 0, 0, 0.15);
-        }
-        body.sidebar-mode #sidebar-footer .footer-link {
-            color: rgba(0, 0, 0, 0.6);
-        }
-        body.sidebar-mode #sidebar-footer .footer-link:hover {
-            color: rgba(0, 0, 0, 0.9);
-            background: rgba(0, 0, 0, 0.05);
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/boettiger-lab/geo-agent@f1e8c13f1fd22f702fe44f4327832be31139f71c/app/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/boettiger-lab/geo-agent@f1e8c13f1fd22f702fe44f4327832be31139f71c/app/chat.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/boettiger-lab/geo-agent@f1e8c13f1fd22f702fe44f4327832be31139f71c/app/sidebar.css">
 </head>
 
 <body>
@@ -89,7 +52,7 @@
     <div id="menu"></div>
 
     <!-- Boot from CDN — pinned to boettiger-lab/geo-agent PR#165 (spec/sidebar-layout) -->
-    <script type="module" src="https://cdn.jsdelivr.net/gh/boettiger-lab/geo-agent@6656298f5cfdd24ab9ec6b748067020dcde761cd/app/main.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/boettiger-lab/geo-agent@f1e8c13f1fd22f702fe44f4327832be31139f71c/app/main.js"></script>
 </body>
 
 </html>

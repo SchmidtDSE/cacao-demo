@@ -2,12 +2,7 @@
     "catalog": "https://s3-west.nrp-nautilus.io/public-data/stac/catalog.json",
     "titiler_url": "https://titiler.nrp-nautilus.io",
     "mcp_url": "https://duckdb-mcp.nrp-nautilus.io/mcp",
-    "sidebar": {
-        "enabled": true,
-        "default_width": 420,
-        "title": "Data Assistant"
-    },
-    "view": {
+"view": {
         "center": [
             -75,
             -9
