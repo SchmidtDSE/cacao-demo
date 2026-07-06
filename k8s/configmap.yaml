@@ -14,11 +14,11 @@ data:
     {
         "mcp_server_url": "${MCP_SERVER_URL}",
         "mcp_auth_token": "${MCP_AUTH_TOKEN}",
-        "llm_model": "nemotron",
+        "llm_model": "qwen",
         "llm_models": [
             {
-                "value": "nemotron",
-                "label": "NRP Nemotron",
+                "value": "qwen",
+                "label": "DSE-nimbus",
                 "endpoint": "/api/llm",
                 "api_key": "unused"
             },
