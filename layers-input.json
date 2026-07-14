@@ -1,4 +1,8 @@
 {
+    "sidebar": {
+        "enabled": true,
+        "chat_title": "Chat"
+    },
     "catalog": "https://s3-west.nrp-nautilus.io/public-data/stac/catalog.json",
     "titiler_url": "https://titiler.nrp-nautilus.io",
     "mcp_url": "https://duckdb-mcp.nrp-nautilus.io/mcp",
