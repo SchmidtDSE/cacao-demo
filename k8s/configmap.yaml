@@ -23,8 +23,14 @@ data:
                 "api_key": "unused"
             },
             {
-                "value": "glm-4.7",
-                "label": "NRP GLM-4.7",
+                "value": "z-ai/glm-5.2",
+                "label": "GLM-5.2 (OpenRouter)",
+                "endpoint": "/api/llm",
+                "api_key": "unused"
+            },
+            {
+                "value": "deepseek/deepseek-v4-flash",
+                "label": "DeepSeek V4 Flash (OpenRouter)",
                 "endpoint": "/api/llm",
                 "api_key": "unused"
             },
