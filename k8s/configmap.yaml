@@ -14,8 +14,14 @@ data:
     {
         "mcp_server_url": "${MCP_SERVER_URL}",
         "mcp_auth_token": "${MCP_AUTH_TOKEN}",
-        "llm_model": "qwen",
+        "llm_model": "deepseek-v4-flash",
         "llm_models": [
+            {
+                "value": "deepseek-v4-flash",
+                "label": "NRP DeepSeek V4 Flash",
+                "endpoint": "/api/llm",
+                "api_key": "unused"
+            },
             {
                 "value": "qwen",
                 "label": "DSE-nimbus",
