@@ -83,6 +83,38 @@
                     "colormap": "reds",
                     "rescale": "0,200",
                     "legend_label": "Species Count"
+                },
+                {
+                    "id": "birds-thr-sr-cog",
+                    "display_name": "Threatened Bird Richness",
+                    "group": "Biodiversity (weighted)",
+                    "colormap": "magma",
+                    "rescale": "0,15",
+                    "legend_label": "Threatened Species Count"
+                },
+                {
+                    "id": "combined-thr-sr-cog",
+                    "display_name": "Threatened Richness (all taxa)",
+                    "group": "Biodiversity (weighted)",
+                    "colormap": "inferno",
+                    "rescale": "0,30",
+                    "legend_label": "Threatened Species Count"
+                },
+                {
+                    "id": "combined-rwr-cog",
+                    "display_name": "Rarity-Weighted Richness (all taxa)",
+                    "group": "Biodiversity (weighted)",
+                    "colormap": "cividis",
+                    "rescale": "0,0.6",
+                    "legend_label": "Sum of inverse range sizes"
+                },
+                {
+                    "id": "combined-thr-rwr-cog",
+                    "display_name": "Threatened Rarity-Weighted Richness",
+                    "group": "Biodiversity (weighted)",
+                    "colormap": "plasma",
+                    "rescale": "0,0.2",
+                    "legend_label": "Sum of inverse range sizes"
                 }
             ]
         },
