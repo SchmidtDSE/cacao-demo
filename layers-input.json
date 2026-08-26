@@ -14,12 +14,13 @@
         "zoom": 5
     },
     "welcome": {
-        "message": "Hi! I can help you explore protected areas and biodiversity data. Try asking:",
+        "message": "Hi! I can help you explore where cocoa is likely grown in Peru, alongside protected areas, carbon, and biodiversity data. Try asking:",
         "examples": [
+            "Where is cocoa most likely to be grown in Peru?",
+            "Do the most likely cocoa areas overlap protected areas?",
+            "Which regions have both high cocoa probability and high vulnerable carbon?",
             "Tell me about the datasets you have access to.",
-            "Show species richness for amphibians.",
-            "What are the protected areas in this region?",
-            "Which areas have the highest biodiversity?"
+            "Show species richness for amphibians."
         ]
     },
     "collections": [
@@ -31,6 +32,7 @@
                     "id": "cocoa-peru-2024-cog",
                     "display_name": "Cocoa Probability (2024)",
                     "group": "Commodities",
+                    "visible": true,
                     "colormap": "greens",
                     "rescale": "0,0.3",
                     "legend_label": "P(cocoa)"
