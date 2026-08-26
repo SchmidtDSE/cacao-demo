@@ -24,6 +24,20 @@
     },
     "collections": [
         {
+            "collection_id": "fdap-2025b-cocoa-peru-2024",
+            "collection_url": "https://s3-west.nrp-nautilus.io/public-commodities/fdap-2025b/cocoa-peru-2024/stac-collection.json",
+            "assets": [
+                {
+                    "id": "cocoa-peru-2024-cog",
+                    "display_name": "Cocoa Probability (2024)",
+                    "group": "Commodities",
+                    "colormap": "greens",
+                    "rescale": "0,0.3",
+                    "legend_label": "P(cocoa)"
+                }
+            ]
+        },
+        {
             "collection_id": "iucn-richness-2025",
             "collection_url": "https://s3-west.nrp-nautilus.io/public-iucn/stac-collection.json",
             "assets": [
