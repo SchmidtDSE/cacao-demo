@@ -17,6 +17,7 @@
         "message": "Hi! I can help you explore where cocoa is likely grown in Peru, alongside protected areas, carbon, and biodiversity data. Try asking:",
         "examples": [
             "Where is cocoa most likely to be grown in Peru?",
+            "What land cover is under the most likely cocoa areas?",
             "Do the most likely cocoa areas overlap protected areas?",
             "Which regions have both high cocoa probability and high vulnerable carbon?",
             "Tell me about the datasets you have access to.",
@@ -132,7 +133,8 @@
                     "id": "cgls-lc100-2019-cog",
                     "display_name": "Land Cover (Copernicus 100 m, 2019)",
                     "group": "Land Cover",
-                    "legend_type": "categorical"
+                    "legend_type": "categorical",
+                    "nodata": 200
                 }
             ]
         },
