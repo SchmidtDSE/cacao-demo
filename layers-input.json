@@ -125,6 +125,18 @@
             ]
         },
         {
+            "collection_id": "cgls-lc100-2019",
+            "collection_url": "https://s3-west.nrp-nautilus.io/public-land-cover/cgls-lc100-2019/stac-collection.json",
+            "assets": [
+                {
+                    "id": "cgls-lc100-2019-cog",
+                    "display_name": "Land Cover (Copernicus 100 m, 2019)",
+                    "group": "Land Cover",
+                    "legend_type": "categorical"
+                }
+            ]
+        },
+        {
             "collection_id": "wetlands-global-unified",
             "collection_url": "https://s3-west.nrp-nautilus.io/public-wetlands/stac-collection.json",
             "assets": [
