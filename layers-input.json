@@ -96,7 +96,7 @@
                     "id": "combined-thr-sr-cog",
                     "display_name": "Threatened Richness (all taxa)",
                     "group": "Biodiversity (weighted)",
-                    "colormap": "oranges",
+                    "colormap": "greys",
                     "rescale": "0,30",
                     "legend_label": "Threatened Species Count"
                 },
@@ -112,7 +112,7 @@
                     "id": "combined-thr-rwr-cog",
                     "display_name": "Threatened Rarity-Weighted Richness",
                     "group": "Biodiversity (weighted)",
-                    "colormap": "greys",
+                    "colormap": "ylorbr",
                     "rescale": "0.0005,0.05",
                     "legend_label": "Sum of inverse range sizes"
                 }
