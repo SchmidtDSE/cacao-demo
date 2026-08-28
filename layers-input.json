@@ -35,7 +35,7 @@
                     "group": "Commodities",
                     "visible": true,
                     "colormap": "purples",
-                    "rescale": "0,0.3",
+                    "rescale": "0,1",
                     "legend_label": "P(cocoa)"
                 }
             ]
@@ -90,7 +90,7 @@
                     "group": "Biodiversity (weighted)",
                     "colormap": "reds",
                     "rescale": "0,15",
-                    "legend_label": "Threatened Species Count"
+                    "legend_label": "Threatened species count (shading capped at 15; max 24)"
                 },
                 {
                     "id": "combined-thr-sr-cog",
@@ -98,7 +98,7 @@
                     "group": "Biodiversity (weighted)",
                     "colormap": "oranges",
                     "rescale": "0,30",
-                    "legend_label": "Threatened Species Count"
+                    "legend_label": "Threatened species count (shading capped at 30; max 76)"
                 },
                 {
                     "id": "combined-rwr-cog",
@@ -106,7 +106,7 @@
                     "group": "Biodiversity (weighted)",
                     "colormap": "blues",
                     "rescale": "0,0.35",
-                    "legend_label": "Sum of inverse range sizes"
+                    "legend_label": "Sum of inverse range sizes (shading capped at 0.35; max 4.5)"
                 },
                 {
                     "id": "combined-thr-rwr-cog",
@@ -114,7 +114,7 @@
                     "group": "Biodiversity (weighted)",
                     "colormap": "ylorbr",
                     "rescale": "0.0005,0.05",
-                    "legend_label": "Sum of inverse range sizes"
+                    "legend_label": "Sum of inverse range sizes (shading capped at 0.05; max 3.0)"
                 }
             ]
         },
