@@ -14,15 +14,32 @@
         "zoom": 5
     },
     "welcome": {
-        "message": "Hi! I can help you explore protected areas and biodiversity data. Try asking:",
+        "message": "Hi! I can help you explore where cocoa is likely grown in Peru, alongside protected areas, carbon, and biodiversity data. Try asking:",
         "examples": [
+            "Where is cocoa most likely to be grown in Peru?",
+            "What land cover is under the most likely cocoa areas?",
+            "Do the most likely cocoa areas overlap protected areas?",
+            "Which regions have both high cocoa probability and high vulnerable carbon?",
             "Tell me about the datasets you have access to.",
-            "Show species richness for amphibians.",
-            "What are the protected areas in this region?",
-            "Which areas have the highest biodiversity?"
+            "Show species richness for amphibians."
         ]
     },
     "collections": [
+        {
+            "collection_id": "fdap-2025b-cocoa-peru-2024",
+            "collection_url": "https://s3-west.nrp-nautilus.io/public-commodities/fdap-2025b/cocoa-peru-2024/stac-collection.json",
+            "assets": [
+                {
+                    "id": "cocoa-peru-2024-cog",
+                    "display_name": "Cocoa Probability (2024)",
+                    "group": "Commodities",
+                    "visible": true,
+                    "colormap": "purples",
+                    "rescale": "0,1",
+                    "legend_label": "P(cocoa)"
+                }
+            ]
+        },
         {
             "collection_id": "iucn-richness-2025",
             "collection_url": "https://s3-west.nrp-nautilus.io/public-iucn/stac-collection.json",
@@ -31,8 +48,8 @@
                     "id": "combined-sr-cog",
                     "display_name": "Combined Species Richness",
                     "group": "Biodiversity",
-                    "colormap": "viridis",
-                    "rescale": "0,1000",
+                    "colormap": "bupu",
+                    "rescale": "50,1500",
                     "legend_label": "Species Count"
                 },
                 {
@@ -40,7 +57,7 @@
                     "display_name": "Amphibian Richness",
                     "group": "Biodiversity",
                     "colormap": "greens",
-                    "rescale": "0,200",
+                    "rescale": "1,125",
                     "legend_label": "Species Count"
                 },
                 {
@@ -48,7 +65,7 @@
                     "display_name": "Bird Richness",
                     "group": "Biodiversity",
                     "colormap": "blues",
-                    "rescale": "0,400",
+                    "rescale": "25,585",
                     "legend_label": "Species Count"
                 },
                 {
@@ -66,6 +83,38 @@
                     "colormap": "reds",
                     "rescale": "0,200",
                     "legend_label": "Species Count"
+                },
+                {
+                    "id": "birds-thr-sr-cog",
+                    "display_name": "Threatened Bird Richness",
+                    "group": "Biodiversity (weighted)",
+                    "colormap": "reds",
+                    "rescale": "0,15",
+                    "legend_label": "Threatened species count (shading capped at 15; max 24)"
+                },
+                {
+                    "id": "combined-thr-sr-cog",
+                    "display_name": "Threatened Richness (all taxa)",
+                    "group": "Biodiversity (weighted)",
+                    "colormap": "oranges",
+                    "rescale": "0,30",
+                    "legend_label": "Threatened species count (shading capped at 30; max 76)"
+                },
+                {
+                    "id": "combined-rwr-cog",
+                    "display_name": "Rarity-Weighted Richness (all taxa)",
+                    "group": "Biodiversity (weighted)",
+                    "colormap": "blues",
+                    "rescale": "0,0.35",
+                    "legend_label": "Sum of inverse range sizes (shading capped at 0.35; max 4.5)"
+                },
+                {
+                    "id": "combined-thr-rwr-cog",
+                    "display_name": "Threatened Rarity-Weighted Richness",
+                    "group": "Biodiversity (weighted)",
+                    "colormap": "ylorbr",
+                    "rescale": "0.0005,0.05",
+                    "legend_label": "Sum of inverse range sizes (shading capped at 0.05; max 3.0)"
                 }
             ]
         },
@@ -105,6 +154,19 @@
                     "colormap": "reds",
                     "rescale": "0,150",
                     "legend_label": "Mg C / ha"
+                }
+            ]
+        },
+        {
+            "collection_id": "cgls-lc100-2019",
+            "collection_url": "https://s3-west.nrp-nautilus.io/public-land-cover/cgls-lc100-2019/stac-collection.json",
+            "assets": [
+                {
+                    "id": "cgls-lc100-2019-cog",
+                    "display_name": "Land Cover (Copernicus 100 m, 2019)",
+                    "group": "Land Cover",
+                    "legend_type": "categorical",
+                    "nodata": 200
                 }
             ]
         },
