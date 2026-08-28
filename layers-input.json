@@ -34,7 +34,7 @@
                     "display_name": "Cocoa Probability (2024)",
                     "group": "Commodities",
                     "visible": true,
-                    "colormap": "greens",
+                    "colormap": "purples",
                     "rescale": "0,0.3",
                     "legend_label": "P(cocoa)"
                 }
@@ -48,7 +48,7 @@
                     "id": "combined-sr-cog",
                     "display_name": "Combined Species Richness",
                     "group": "Biodiversity",
-                    "colormap": "viridis",
+                    "colormap": "greys",
                     "rescale": "50,1500",
                     "legend_label": "Species Count"
                 },
@@ -88,7 +88,7 @@
                     "id": "birds-thr-sr-cog",
                     "display_name": "Threatened Bird Richness",
                     "group": "Biodiversity (weighted)",
-                    "colormap": "magma",
+                    "colormap": "reds",
                     "rescale": "0,15",
                     "legend_label": "Threatened Species Count"
                 },
@@ -96,7 +96,7 @@
                     "id": "combined-thr-sr-cog",
                     "display_name": "Threatened Richness (all taxa)",
                     "group": "Biodiversity (weighted)",
-                    "colormap": "inferno",
+                    "colormap": "oranges",
                     "rescale": "0,30",
                     "legend_label": "Threatened Species Count"
                 },
@@ -104,7 +104,7 @@
                     "id": "combined-rwr-cog",
                     "display_name": "Rarity-Weighted Richness (all taxa)",
                     "group": "Biodiversity (weighted)",
-                    "colormap": "cividis",
+                    "colormap": "blues",
                     "rescale": "0,0.35",
                     "legend_label": "Sum of inverse range sizes"
                 },
@@ -112,7 +112,7 @@
                     "id": "combined-thr-rwr-cog",
                     "display_name": "Threatened Rarity-Weighted Richness",
                     "group": "Biodiversity (weighted)",
-                    "colormap": "plasma",
+                    "colormap": "greys",
                     "rescale": "0.0005,0.05",
                     "legend_label": "Sum of inverse range sizes"
                 }
