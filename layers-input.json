@@ -48,7 +48,7 @@
                     "id": "combined-sr-cog",
                     "display_name": "Combined Species Richness",
                     "group": "Biodiversity",
-                    "colormap": "greys",
+                    "colormap": "bupu",
                     "rescale": "50,1500",
                     "legend_label": "Species Count"
                 },
@@ -96,7 +96,7 @@
                     "id": "combined-thr-sr-cog",
                     "display_name": "Threatened Richness (all taxa)",
                     "group": "Biodiversity (weighted)",
-                    "colormap": "greys",
+                    "colormap": "oranges",
                     "rescale": "0,30",
                     "legend_label": "Threatened Species Count"
                 },
