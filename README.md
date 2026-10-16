@@ -19,6 +19,16 @@ system-prompt.md    ← LLM system prompt (customize per app)
 k8s/                ← Kubernetes deployment manifests (optional)
 ```
 
+## Where this is going
+
+This app is growing into a **UN SEEA-EA ecosystem accounting** tool for cocoa production systems —
+the five accounts (extent → condition → services → monetary → asset) plus a scenario branch that
+recomputes them under a proposed land-use change.
+
+See [`SEEA-ACCOUNTING.md`](SEEA-ACCOUNTING.md) for the design notes: what shade-grown versus full-sun
+cocoa looks like in the accounts, what is a data gap versus a framework limit, and the open questions.
+The accounting machinery comes from [`SchmidtDSE/unseea`](https://github.com/SchmidtDSE/unseea).
+
 ## More resources
 
 - [Configuration reference](https://boettiger-lab.github.io/geo-agent/docs/guide/configuration) — all `layers-input.json` fields with examples
