@@ -8,7 +8,7 @@ Users describe in plain language what datasets to show; the app uses an LLM agen
 
 **Feedback form:** [https://data-requests.nrp-nautilus.io/cacao](https://data-requests.nrp-nautilus.io/cacao)
 
-**Full documentation:** [boettiger-lab.github.io/geo-agent/docs](https://boettiger-lab.github.io/geo-agent/docs/)
+**Full documentation:** [schmidtdse.github.io/glen/](https://schmidtdse.github.io/glen/)
 
 ## Repository structure
 
@@ -21,6 +21,6 @@ k8s/                ← Kubernetes deployment manifests (optional)
 
 ## More resources
 
-- [Configuration reference](https://boettiger-lab.github.io/geo-agent/docs/guide/configuration) — all `layers-input.json` fields with examples
-- [Deployment guide](https://boettiger-lab.github.io/geo-agent/docs/guide/deployment) — GitHub Pages, Hugging Face Spaces, Kubernetes
-- [Core library](https://github.com/boettiger-lab/geo-agent) — source code for the map, chat, and agent modules
+- [Configuration reference](https://schmidtdse.github.io/glen/guide/configuration) — all `layers-input.json` fields with examples
+- [Deployment guide](https://schmidtdse.github.io/glen/guide/deployment) — GitHub Pages, Hugging Face Spaces, Kubernetes
+- [Core library](https://github.com/SchmidtDSE/glen) — source code for the map, chat, and agent modules
