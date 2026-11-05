@@ -20,6 +20,7 @@
             "What land cover is under the most likely cocoa areas?",
             "Do the most likely cocoa areas overlap protected areas?",
             "Which regions have both high cocoa probability and high vulnerable carbon?",
+            "How much likely cocoa falls on Indigenous community lands, by region?",
             "Tell me about the datasets you have access to.",
             "Show species richness for amphibians."
         ]
@@ -139,6 +140,41 @@
                         "NAME",
                         "DESIG",
                         "IUCN_CAT"
+                    ]
+                }
+            ]
+        },
+        {
+            "collection_id": "landmark-iplc-poly",
+            "collection_url": "https://s3-west.nrp-nautilus.io/public-indigenous/landmark/iplc-poly-stac.json",
+            "assets": [
+                {
+                    "id": "iplc-poly-pmtiles",
+                    "display_name": "Indigenous & Community Lands (LandMark)",
+                    "group": "People & Land Rights",
+                    "visible": false,
+                    "default_style": {
+                        "fill-color": [
+                            "match",
+                            ["get", "form_rec"],
+                            "Acknowledged by govt", "#B5651D",
+                            "Not acknowledged by govt", "#E8A33D",
+                            "#9E9E9E"
+                        ],
+                        "fill-opacity": 0.45
+                    },
+                    "outline_style": {
+                        "line-color": "#6D3A0C",
+                        "line-width": 0.8
+                    },
+                    "tooltip_fields": [
+                        "name",
+                        "identity",
+                        "ethncty_1",
+                        "category",
+                        "form_rec",
+                        "doc_status",
+                        "data_src_s"
                     ]
                 }
             ]
