@@ -26,7 +26,39 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
+      # SchmidtDSE/cacao-demo's own Pages site redirects to its NRP deployment, which can
+      # reach the MCP server's token (SchmidtDSE/geo-query#453); a static host
+      # cannot. The condition keeps any repo made from this one publishing its
+      # own app as before.
+      - name: Build redirect site
+        if: github.repository == 'SchmidtDSE/cacao-demo'
+        run: |
+          mkdir _site
+          cat > _site/index.html <<'EOF'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <title>Moved</title>
+              <meta http-equiv="refresh" content="0; url=https://cacao-demo.nrp-nautilus.io/">
+              <script>
+                  location.replace('https://cacao-demo.nrp-nautilus.io' +
+                      location.pathname.replace(/^\/cacao-demo/, '') + location.search + location.hash);
+              </script>
+          </head>
+          <body><p>This site moved to <a href="https://cacao-demo.nrp-nautilus.io/">https://cacao-demo.nrp-nautilus.io</a>.</p></body>
+          </html>
+          EOF
+          cp _site/index.html _site/404.html
+
+      - name: Upload redirect
+        if: github.repository == 'SchmidtDSE/cacao-demo'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Upload app
+        if: github.repository != 'SchmidtDSE/cacao-demo'
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
