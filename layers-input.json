@@ -127,14 +127,6 @@
                     "display_name": "Protected Areas (WDPA)",
                     "group": "Protected Areas",
                     "visible": true,
-                    "default_style": {
-                        "fill-color": "#26633A",
-                        "fill-opacity": 0.6
-                    },
-                    "outline_style": {
-                        "line-color": "#1565C0",
-                        "line-width": 1
-                    },
                     "tooltip_fields": [
                         "NAME",
                         "DESIG",
