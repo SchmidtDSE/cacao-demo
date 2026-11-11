@@ -34,8 +34,6 @@
                     "display_name": "Cocoa Probability (2024)",
                     "group": "Commodities",
                     "visible": true,
-                    "colormap": "purples",
-                    "rescale": "0,1",
                     "legend_label": "P(cocoa)"
                 }
             ]
@@ -48,72 +46,54 @@
                     "id": "combined-sr-cog",
                     "display_name": "Combined Species Richness",
                     "group": "Biodiversity",
-                    "colormap": "bupu",
-                    "rescale": "50,1500",
                     "legend_label": "Species Count"
                 },
                 {
                     "id": "amphibians-sr-cog",
                     "display_name": "Amphibian Richness",
                     "group": "Biodiversity",
-                    "colormap": "greens",
-                    "rescale": "1,125",
                     "legend_label": "Species Count"
                 },
                 {
                     "id": "birds-sr-cog",
                     "display_name": "Bird Richness",
                     "group": "Biodiversity",
-                    "colormap": "blues",
-                    "rescale": "25,585",
                     "legend_label": "Species Count"
                 },
                 {
                     "id": "mammals-sr-cog",
                     "display_name": "Mammal Richness",
                     "group": "Biodiversity",
-                    "colormap": "oranges",
-                    "rescale": "0,200",
                     "legend_label": "Species Count"
                 },
                 {
                     "id": "reptiles-sr-cog",
                     "display_name": "Reptile Richness",
                     "group": "Biodiversity",
-                    "colormap": "reds",
-                    "rescale": "0,200",
                     "legend_label": "Species Count"
                 },
                 {
                     "id": "birds-thr-sr-cog",
                     "display_name": "Threatened Bird Richness",
                     "group": "Biodiversity (weighted)",
-                    "colormap": "reds",
-                    "rescale": "0,15",
                     "legend_label": "Threatened species count (shading capped at 15; max 24)"
                 },
                 {
                     "id": "combined-thr-sr-cog",
                     "display_name": "Threatened Richness (all taxa)",
                     "group": "Biodiversity (weighted)",
-                    "colormap": "oranges",
-                    "rescale": "0,30",
                     "legend_label": "Threatened species count (shading capped at 30; max 76)"
                 },
                 {
                     "id": "combined-rwr-cog",
                     "display_name": "Rarity-Weighted Richness (all taxa)",
                     "group": "Biodiversity (weighted)",
-                    "colormap": "blues",
-                    "rescale": "0,0.35",
                     "legend_label": "Sum of inverse range sizes (shading capped at 0.35; max 4.5)"
                 },
                 {
                     "id": "combined-thr-rwr-cog",
                     "display_name": "Threatened Rarity-Weighted Richness",
                     "group": "Biodiversity (weighted)",
-                    "colormap": "ylorbr",
-                    "rescale": "0.0005,0.05",
                     "legend_label": "Sum of inverse range sizes (shading capped at 0.05; max 3.0)"
                 }
             ]
@@ -143,8 +123,6 @@
                     "id": "v2-vulnerable-2024-cog",
                     "display_name": "Vulnerable Carbon (2024)",
                     "group": "Carbon",
-                    "colormap": "reds",
-                    "rescale": "0,150",
                     "legend_label": "Mg C / ha"
                 }
             ]
@@ -156,9 +134,7 @@
                 {
                     "id": "cgls-lc100-2019-cog",
                     "display_name": "Land Cover (Copernicus 100 m, 2019)",
-                    "group": "Land Cover",
-                    "legend_type": "categorical",
-                    "nodata": 200
+                    "group": "Land Cover"
                 }
             ]
         },
